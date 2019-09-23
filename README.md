@@ -5,6 +5,9 @@ $ dtrace -C -h -s provider.d -o provider.h
 $ gcc -c my_prob.c -o my_prob.o
 $ dtrace -C -G -s provider.d -o provider.o my_prob.o
 $ gcc -o my_prob my_prob.o provider.o
+$ /usr/share/bcc/tools/tplist -l ./my_prob
+b'./my_prob' b'my_prob':b'start__process__val'
+b'./my_prob' b'my_prob':b'end__process__val'
 ```
 
 

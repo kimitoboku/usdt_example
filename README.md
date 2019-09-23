@@ -15,7 +15,7 @@ b'./my_prob' b'my_prob':b'end__process__val'
 ```
 $ ls /usr/bin/dtrace
 /usr/bin/dtrace
-kimitoboku@kimitoboku-dev:~/dev/src/github.com/kimitoboku/usdt_example> tail -30 /usr/include/sys/sdt.h
+$ tail -30 /usr/include/sys/sdt.h
 /* DTrace compatible macro names.  */
 #define DTRACE_PROBE(provider,probe)            \
   STAP_PROBE(provider,probe)
